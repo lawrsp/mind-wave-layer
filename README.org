@@ -1,0 +1,77 @@
+#+TITLE: mind-wave layer
+
+#+TAGS: general|mind-wave|layer|ChatGPT
+
+* Table of Contents                     :TOC_5_gh:noexport:
+- [[#description][Description]]
+  - [[#features][Features:]]
+- [[#install][Install]]
+  - [[#api-key][API Key]]
+- [[#key-bindings][Key bindings]]
+  - [[#global][global]]
+  - [[#mind-wave-chat-mode][Mind-Wave Chat Mode]]
+  - [[#prog-mode][Prog Mode]]
+
+* Description
+This layer adds support for [[https://github.com/manateelazycat/mind-wave][mind-wave]]
+
+** Features:
+- chat with ChatGPT, support sending multiline 
+- refactor/document/explain code using ChatGPT
+- translate using ChatGPT
+- ...
+
+* Install
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =mind-wave= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+#+BEGIN_SRC emacs-lisp
+  (setq-default dotspacemacs-configuration-layers '(typescript))
+#+END_SRC
+
+** API Key
+You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api-keys][api key]]
+
+1. use key file
+
+#+BEGIN_SRC elisp
+  (setq-default dotspacemacs-configuration-layers '(
+    (mind-wave :variables mind-wave-api-key-path  "/path/to/api-key-file")
+    ))
+#+END_SRC
+
+2. set the environment variable OPENAI_API_KEY
+
+
+* Key bindings
+
+** global
+
+| Key binding | Description                                                                                                  |
+|-------------+--------------------------------------------------------------------------------------------------------------|
+| ~SPC m m t~ | replace the selected area with the translated content                                                        |
+| ~SPC m m p~ | replace the selected area with the polished document                                                         |
+| ~SPC m E e~ | explain the meaning of the words in the current sentence and provide similar example sentences |
+| ~SPC m g a~ | adjust the text or code according to your instructions                                                       |
+
+** Mind-Wave Chat Mode
+
+| Key binding | Description                                                |
+|-------------+------------------------------------------------------------|
+| ~SPC m j~   | input your question, and wait for ChatGPT to respond       |
+| ~SPC m u~   | continue the conversation                                  |
+| ~SPC m i~   | generate a new title based on the content                  |
+| ~SPC m J~   | input multiple questions, and wait for ChatGPT to respond. |
+| ~SPC m l~   | insert the ----- User ------ separator,                    |
+| ~SPC m s~   | send buffer to ChatGPT                                     |
+
+** Prog Mode
+
+| Key binding | Description                                                                                  |
+|-------------+----------------------------------------------------------------------------------------------|
+| ~SPC m m r~ | split the screen to display the refactored code and suggestions for improvement on the right |
+| ~SPC m m c~ | split the screen to display code with comments on the right                                  |
+| ~SPC m m E~ | split the screen to display an explanation for the code on the right                         |
+| ~SPC m m g~ | analyze the current diff content and generate a patch name                                   |
+| ~SPC m m R~ | restore window configuration                                                                 |
