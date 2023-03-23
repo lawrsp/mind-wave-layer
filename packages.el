@@ -61,4 +61,4 @@
         "J" #'mind-wave-chat-ask-with-multiline
         ;; Execute the command mind-wave-chat-ask-insert-line to insert the ----- User ------ separator, continue inputting multiple lines in the buffer, and finally execute mind-wave-chat-ask-send-buffer.
         "l" #'mind-wave-chat-ask-insert-line
-        ))))
+        "s" #'mind-wave-chat-ask-send-buffer))))
