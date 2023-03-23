@@ -27,7 +27,7 @@ add =mind-wave= to the existing =dotspacemacs-configuration-layers= list in this
 file.
 
 #+BEGIN_SRC emacs-lisp
-  (setq-default dotspacemacs-configuration-layers '(typescript))
+  (setq-default dotspacemacs-configuration-layers '(mind-wave))
 #+END_SRC
 
 ** API Key
