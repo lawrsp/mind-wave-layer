@@ -34,12 +34,11 @@ file.
 You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api-keys][api key]]
 
 1. use key file
-
-#+BEGIN_SRC elisp
-  (setq-default dotspacemacs-configuration-layers '(
-    (mind-wave :variables mind-wave-api-key-path  "/path/to/api-key-file")
+   #+BEGIN_SRC elisp
+    (setq-default dotspacemacs-configuration-layers '(
+              (mind-wave :variables mind-wave-api-key-path  "/path/to/api-key-file")
     ))
-#+END_SRC
+   #+END_SRC
 
 2. set the environment variable OPENAI_API_KEY
 
