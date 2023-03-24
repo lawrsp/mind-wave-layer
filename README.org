@@ -6,6 +6,7 @@
 - [[#description][Description]]
   - [[#features][Features:]]
 - [[#install][Install]]
+  - [[#pre-requisites][Pre-requisites]]
   - [[#api-key][API Key]]
 - [[#key-bindings][Key bindings]]
   - [[#global][global]]
@@ -30,6 +31,13 @@ file.
   (setq-default dotspacemacs-configuration-layers '(mind-wave))
 #+END_SRC
 
+** Pre-requisites
+You will need python3 and install some additional packages:
+
+#+BEGIN_SRC shell
+  pip3 install openai epc sexpdata six
+#+BEGIN_SRC emacs-lisp
+
 ** API Key
 You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api-keys][api key]]
 
@@ -40,11 +48,9 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
     ))
    #+END_SRC
 
-2. set the environment variable OPENAI_API_KEY
-
+2. or, set the environment variable OPENAI_API_KEY
 
 * Key bindings
-
 ** global
 
 | Key binding | Description                                                                                                  |
