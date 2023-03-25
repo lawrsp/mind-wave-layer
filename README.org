@@ -59,6 +59,7 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
 | ~SPC m m p~ | replace the selected area with the polished document                                                         |
 | ~SPC m E e~ | explain the meaning of the words in the current sentence and provide similar example sentences |
 | ~SPC m g a~ | adjust the text or code according to your instructions                                                       |
+| ~SPC m m R~ | restore window configuration                                                                 |
 
 ** Mind-Wave Chat Mode
 
@@ -79,4 +80,3 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
 | ~SPC m m c~ | split the screen to display code with comments on the right                                  |
 | ~SPC m m E~ | split the screen to display an explanation for the code on the right                         |
 | ~SPC m m g~ | analyze the current diff content and generate a patch name                                   |
-| ~SPC m m R~ | restore window configuration                                                                 |

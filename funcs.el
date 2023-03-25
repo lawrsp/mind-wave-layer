@@ -33,7 +33,10 @@
     ;; Execute the command mind-wave-explain-word, ChatGPT will automatically explain the meaning of the words in the current sentence and provide similar example sentences.
     "mme" 'mind-wave-explain-word
     ;; Execute the command mind-wave-adjust-text. ChatGPT will adjust the text or code according to your instructions.
-    "mma" 'mind-wave-adjust-text))
+    "mma" 'mind-wave-adjust-text
+    ;; restore window configuration
+    "mmR" 'mind-wave-restore-window-configuration))
+
 
 (defun spacemacs//mide-wave-setup-prog-bindings ()
   "Define keys bindings of mind-wave prog assistant functions for mode"
@@ -49,5 +52,4 @@
       ;; Execute the command mind-wave-explain-code, ChatGPT will automatically split the screen to display an explanation for the code on the right.
       "mE" 'mind-wave-explain-code
       ;; Execute the command mind-wave-generate-commit-name, ChatGPT will automatically analyze the current diff content and generate a patch name.
-      "mg" 'mind-wave-generate-commit-name
-      "mR" 'mind-wave-restore-window-configuration)))
+      "mg" 'mind-wave-generate-commit-name)))
