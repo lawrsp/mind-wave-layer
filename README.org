@@ -35,8 +35,8 @@ file.
 You will need python3 and install some additional packages:
 
 #+BEGIN_SRC shell
-  pip3 install openai epc sexpdata six
-#+BEGIN_SRC emacs-lisp
+pip3 install openai epc sexpdata six
+#+END_SRC
 
 ** API Key
 You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api-keys][api key]]
