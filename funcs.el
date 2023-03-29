@@ -37,7 +37,6 @@
     ;; restore window configuration
     "mmR" 'mind-wave-restore-window-configuration))
 
-
 (defun spacemacs//mind-wave-setup-prog-bindings ()
   "Define keys bindings of mind-wave prog assistant functions for mode"
   (let ((mode major-mode))
