@@ -2,8 +2,8 @@
 ;;
 ;; Copyright (c) 2012-2022 Sylvain Benner & Contributors
 ;;
-;; Author: Thanh Vuong <thanhvg@gmail.com>
-;; URL: https://github.com/thanhvg
+;; Author: lawrsp <lawrancersp@gmail.com>
+;; URL: https://github.com/lawrsp
 ;;
 ;; This file is not part of GNU Emacs.
 ;;
