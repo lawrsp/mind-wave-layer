@@ -20,8 +20,8 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-(defun spacemacs//mide-wave-setup-global-bindings ()
-  "Define keys bindings globally of mide-wave document assistant functions"
+(defun spacemacs//mind-wave-setup-global-bindings ()
+  "Define keys bindings globally of mind-wave document assistant functions"
   (spacemacs/declare-prefix "mm"  "mind-wave")
   (spacemacs/set-leader-keys
     ;; Document mode
@@ -38,7 +38,7 @@
     "mmR" 'mind-wave-restore-window-configuration))
 
 
-(defun spacemacs//mide-wave-setup-prog-bindings ()
+(defun spacemacs//mind-wave-setup-prog-bindings ()
   "Define keys bindings of mind-wave prog assistant functions for mode"
   (let ((mode major-mode))
     (spacemacs/declare-prefix-for-mode mode "mm" "mind-wave")

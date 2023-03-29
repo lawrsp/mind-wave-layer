@@ -45,8 +45,8 @@
     :mode ("\\.chat$" . mind-wave-chat-mode)
     :init
     (progn
-      (add-hook 'prog-mode-hook 'spacemacs//mide-wave-setup-prog-bindings)
-      (spacemacs//mide-wave-setup-global-bindings))
+      (add-hook 'prog-mode-hook 'spacemacs//mind-wave-setup-prog-bindings)
+      (spacemacs//mind-wave-setup-global-bindings))
     :config
     (progn
       (spacemacs/set-leader-keys-for-major-mode 'mind-wave-chat-mode
