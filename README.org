@@ -10,8 +10,8 @@
   - [[#api-key][API Key]]
 - [[#key-bindings][Key bindings]]
   - [[#global][global]]
-  - [[#mind-wave-chat-mode][Mind-Wave Chat Mode]]
   - [[#prog-mode][Prog Mode]]
+  - [[#mind-wave-chat-mode][Mind-Wave Chat Mode]]
 
 * Description
 This layer adds support for [[https://github.com/manateelazycat/mind-wave][mind-wave]]
@@ -55,11 +55,20 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
 
 | Key binding | Description                                                                                                  |
 |-------------+--------------------------------------------------------------------------------------------------------------|
-| ~SPC m m t~ | replace the selected area with the translated content                                                        |
-| ~SPC m m p~ | replace the selected area with the polished document                                                         |
-| ~SPC m E e~ | explain the meaning of the words in the current sentence and provide similar example sentences |
-| ~SPC m g a~ | adjust the text or code according to your instructions                                                       |
-| ~SPC m m R~ | restore window configuration                                                                 |
+| ~SPC m w t~ | replace the selected area with the translated content                                                        |
+| ~SPC m w p~ | replace the selected area with the polished document                                                         |
+| ~SPC m w e~ | explain the meaning of the words in the current sentence and provide similar example sentences |
+| ~SPC m w a~ | adjust the text or code according to your instructions                                                       |
+| ~SPC m w R~ | restore window configuration                                                                 |
+
+** Prog Mode
+
+| Key binding | Description                                                                                  |
+|-------------+----------------------------------------------------------------------------------------------|
+| ~SPC m w r~ | split the screen to display the refactored code and suggestions for improvement on the right |
+| ~SPC m w c~ | split the screen to display code with comments on the right                                  |
+| ~SPC m w E~ | split the screen to display an explanation for the code on the right                         |
+| ~SPC m w g~ | analyze the current diff content and generate a patch name                                   |
 
 ** Mind-Wave Chat Mode
 
@@ -72,11 +81,3 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
 | ~SPC m l~   | insert the ----- User ------ separator,                    |
 | ~SPC m s~   | send buffer to ChatGPT                                     |
 
-** Prog Mode
-
-| Key binding | Description                                                                                  |
-|-------------+----------------------------------------------------------------------------------------------|
-| ~SPC m m r~ | split the screen to display the refactored code and suggestions for improvement on the right |
-| ~SPC m m c~ | split the screen to display code with comments on the right                                  |
-| ~SPC m m E~ | split the screen to display an explanation for the code on the right                         |
-| ~SPC m m g~ | analyze the current diff content and generate a patch name                                   |
