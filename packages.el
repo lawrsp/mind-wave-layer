@@ -52,13 +52,13 @@
       (spacemacs/set-leader-keys-for-major-mode 'mind-wave-chat-mode
         ;; Create a test.chat file to automatically enter mind-wave-chat-mode.
         ;; Execute the command mind-wave-chat-ask (press Ctrl + j), input your question, and wait for ChatGPT to respond.
-        "j" #'mind-wave-chat-ask
+        "a" #'mind-wave-chat-ask
         ;; Execute the command mind-wave-chat-continue (press Ctrl + u) to continue the conversation.
-        "u" #'mind-wave-chat-continue
+        "c" #'mind-wave-chat-continue
         ;; Execute the command mind-wave-chat-generate-title (press Ctrl + i) to generate a new title based on the content.
-        "i" #'mind-wave-chat-generate-title
+        "T" #'mind-wave-chat-generate-title
         ;; Execute the command mind-wave-chat-ask-with-multiline (press Ctrl + Shift + j), input multiple questions, and wait for ChatGPT to respond.
-        "J" #'mind-wave-chat-ask-with-multiline
+        "A" #'mind-wave-chat-ask-with-multiline
         ;; Execute the command mind-wave-chat-ask-insert-line to insert the ----- User ------ separator, continue inputting multiple lines in the buffer, and finally execute mind-wave-chat-ask-send-buffer.
-        "l" #'mind-wave-chat-ask-insert-line
+        "i" #'mind-wave-chat-ask-insert-line
         "s" #'mind-wave-chat-ask-send-buffer))))

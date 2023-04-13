@@ -76,10 +76,10 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
 
 | Key binding | Description                                                |
 |-------------+------------------------------------------------------------|
-| ~SPC m j~   | input your question, and wait for ChatGPT to respond       |
-| ~SPC m u~   | continue the conversation                                  |
-| ~SPC m i~   | generate a new title based on the content                  |
-| ~SPC m J~   | input multiple questions, and wait for ChatGPT to respond. |
-| ~SPC m l~   | insert the ----- User ------ separator,                    |
+| ~SPC m a~  | input your question, and wait for ChatGPT to respond       |
+| ~SPC m c~  | continue the conversation                                  |
+| ~SPC m T~  | generate a new title based on the content                  |
+| ~SPC m A~  | input multiple questions, and wait for ChatGPT to respond. |
+| ~SPC m i~  | insert the ----- User ------ separator,                    |
 | ~SPC m s~   | send buffer to ChatGPT                                     |
 
