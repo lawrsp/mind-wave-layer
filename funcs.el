@@ -50,5 +50,10 @@
       "mc" 'mind-wave-comment-code
       ;; Execute the command mind-wave-explain-code, ChatGPT will automatically split the screen to display an explanation for the code on the right.
       "mE" 'mind-wave-explain-code
+      ;; Execute the command mind-wave-explain-point, ChatGPT will automatically split the screen and display the API explanation on the right side of the screen where the cursor is located
+      "mP" 'mind-wave-explain-point
       ;; Execute the command mind-wave-generate-commit-name, ChatGPT will automatically analyze the current diff content and generate a patch name.
-      "mg" 'mind-wave-generate-commit-name)))
+      "mg" 'mind-wave-generate-commit-name
+      ;; Execute the command mind-wave-refactory-code-with-input. ChatGPT will automatically split the screen and provide you with the refactored code and suggestions based on your prompts on the right side of the screen
+      "mi" 'mind-wave-refactory-code-with-input
+      )))

@@ -68,7 +68,9 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
 | ~SPC m m r~ | split the screen to display the refactored code and suggestions for improvement on the right |
 | ~SPC m m c~ | split the screen to display code with comments on the right                                  |
 | ~SPC m m E~ | split the screen to display an explanation for the code on the right                         |
+| ~SPC m m P~ | split the screen and display the API explanation on the right side of the screen where the cursor is located                         |
 | ~SPC m m g~ | analyze the current diff content and generate a patch name                                   |
+| ~SPC m m i~ | split the screen and provide you with the refactored code and suggestions based on your prompts on the right side of the screen                                   |
 
 ** Mind-Wave Chat Mode
 
