@@ -53,24 +53,24 @@ You will need a =ChatGPT API Key=, see [[https://platform.openai.com/account/api
 * Key bindings
 ** global
 
-| Key binding | Description                                                                                                  |
-|-------------+--------------------------------------------------------------------------------------------------------------|
-| ~SPC m m t~ | replace the selected area with the translated content                                                        |
-| ~SPC m m p~ | replace the selected area with the polished document                                                         |
-| ~SPC m m e~ | explain the meaning of the words in the current sentence and provide similar example sentences |
-| ~SPC m m a~ | adjust the text or code according to your instructions                                                       |
-| ~SPC m m R~ | restore window configuration                                                                 |
+| Key binding | Description                                                                                    |
+|-------------+------------------------------------------------------------------------------------------------|
+| ~SPC m m t~ | explain the meaning of the words in the current sentence and provide similar example sentences |
+| ~SPC m m T~ | replace the selected area with the translated content                                          |
+| ~SPC m m p~ | replace the selected area with the polished document                                           |
+| ~SPC m m a~ | adjust the text or code according to your instructions                                         |
+| ~SPC m m W~ | restore window configuration                                                                   |
 
 ** Prog Mode
 
-| Key binding | Description                                                                                  |
-|-------------+----------------------------------------------------------------------------------------------|
-| ~SPC m m r~ | split the screen to display the refactored code and suggestions for improvement on the right |
-| ~SPC m m c~ | split the screen to display code with comments on the right                                  |
-| ~SPC m m E~ | split the screen to display an explanation for the code on the right                         |
-| ~SPC m m P~ | split the screen and display the API explanation on the right side of the screen where the cursor is located                         |
-| ~SPC m m g~ | analyze the current diff content and generate a patch name                                   |
-| ~SPC m m i~ | split the screen and provide you with the refactored code and suggestions based on your prompts on the right side of the screen                                   |
+| Key binding | Description                                                                                                                     |
+|-------------+---------------------------------------------------------------------------------------------------------------------------------|
+| ~SPC m m g~ | generate and output the code in the current buffer according to the prompt                                                      |
+| ~SPC m m r~ | split the screen to display the refactored code and suggestions for improvement on the right                                    |
+| ~SPC m m R~ | split the screen and provide you with the refactored code and suggestions based on your prompts on the right side of the screen |
+| ~SPC m m c~ | split the screen to display code with comments on the right                                                                     |
+| ~SPC m m e~ | split the screen to display an explanation for the code on the right                                                            |
+| ~SPC m m E~ | split the screen and display the API explanation on the right side of the screen where the cursor is located                    |
 
 ** Mind-Wave Chat Mode
 

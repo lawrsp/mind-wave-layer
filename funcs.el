@@ -27,21 +27,22 @@
     ;; Document mode
     ;; Selected Content:
     ;; Execute the command mind-wave-translate-to-english, ChatGPT will automatically replace the selected area with the translated content.
-    "mmt" 'mind-wave-translate-to-english
+    "mmT" 'mind-wave-translate-to-english
     ;; Execute the command mind-wave-proofreading-doc, ChatGPT will automatically replace the selected area with the polished document.
     "mmp" 'mind-wave-proofreading-doc
     ;; Execute the command mind-wave-explain-word, ChatGPT will automatically explain the meaning of the words in the current sentence and provide similar example sentences.
-    "mme" 'mind-wave-explain-word
+    "mmt" 'mind-wave-explain-word
     ;; Execute the command mind-wave-adjust-text. ChatGPT will adjust the text or code according to your instructions.
     "mma" 'mind-wave-adjust-text
     ;; restore window configuration
-    "mmR" 'mind-wave-restore-window-configuration))
+    "mmW" 'mind-wave-restore-window-configuration))
 
 (defun spacemacs//mind-wave-setup-prog-bindings ()
   "Define keys bindings of mind-wave prog assistant functions for mode"
   (let ((mode major-mode))
     (spacemacs/declare-prefix-for-mode mode "mm" "mind-wave")
     (spacemacs/set-leader-keys-for-major-mode mode
+      "mg" 'mind-wave-generate-code
       ;; Code Refactoring Mode
       ;; Move the cursor to the desired function for refactoring.
       ;; Execute the command mind-wave-refactory-code, ChatGPT will automatically split the screen to display the refactored code and suggestions for improvement on the right.
@@ -49,11 +50,11 @@
       ;; Execute the command mind-wave-comment-code, ChatGPT will automatically split the screen to display code with comments on the right.
       "mc" 'mind-wave-comment-code
       ;; Execute the command mind-wave-explain-code, ChatGPT will automatically split the screen to display an explanation for the code on the right.
-      "mE" 'mind-wave-explain-code
+      "me" 'mind-wave-explain-code
       ;; Execute the command mind-wave-explain-point, ChatGPT will automatically split the screen and display the API explanation on the right side of the screen where the cursor is located
-      "mP" 'mind-wave-explain-point
+      "mE" 'mind-wave-explain-point
       ;; Execute the command mind-wave-generate-commit-name, ChatGPT will automatically analyze the current diff content and generate a patch name.
-      "mg" 'mind-wave-generate-commit-name
+      ;; "mn" 'mind-wave-generate-commit-name
       ;; Execute the command mind-wave-refactory-code-with-input. ChatGPT will automatically split the screen and provide you with the refactored code and suggestions based on your prompts on the right side of the screen
-      "mi" 'mind-wave-refactory-code-with-input
+      "mR" 'mind-wave-refactory-code-with-input
       )))
